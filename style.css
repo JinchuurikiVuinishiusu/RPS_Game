@@ -98,16 +98,16 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin: 0 10px;
-    padding: 10px 20px;
+    padding: 5px 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .choice img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
-.scores {
+.scores, .message {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -117,6 +117,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 
 
 

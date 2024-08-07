@@ -16,7 +16,7 @@ var computerScore = 0;
 
 function playRound (humanChoice, computerChoice) {
     if (humanChoice === computerChoice ) {
-        return (alert("TIE"))
+        return "It's a tie"
     } else if (
         (humanChoice === "rock" && computerChoice === "scissors") ||
         (humanChoice === "paper" && computerChoice === "rock") ||
@@ -72,7 +72,7 @@ let currentRound = 1;
 
 function playGame () {
     if (currentRound <= roundCount.value) {
-        round.textContent = `{currentRound}`;
+        round.textContent = `${currentRound}`;
 
         computerSelection = getComputerChoice();
         computerChoiceImg.src = `${computerSelection}.png`;
@@ -89,7 +89,7 @@ function playGame () {
             }, 3000);
         } else {
             setTimeout(() => {
-                message.textContent = `Final Score - Human:${humanScore}, Computer: ${computerScore}`;
+                message.textContent = `Final Score - Human: ${humanScore}, Computer: ${computerScore}`;
                 humanScore = 0;
                 computerScore = 0;
                 currentRound = 1;
