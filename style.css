@@ -1,3 +1,123 @@
-* {
+body {
     background-color: rgb(252, 235, 205);
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.play-btn {
+    padding: 5px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#round-count {
+    width: 50px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.round, .sround {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100px;
+    margin-bottom: 0;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonh1, #h2score {
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+    
+}
+
+.playground {
+    height: 250px;
+}
+
+.human, .computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pop-up {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    width: 600px;
+    height: 250px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255);
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.choice img {
+    width: 100%;
+    height: auto;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#human-score, #computer-score {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
