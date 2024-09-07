@@ -1,1 +1,1 @@
-# Practices
+# Rock Paper Scissors game
